@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import InputField from './InputField';
 import { ConcentrationUnit, VolumeUnit } from '../types';
@@ -61,8 +60,8 @@ const SerialCalculator: React.FC = () => {
   return (
     <div className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-4 p-4 bg-black/20 rounded-lg border border-primary-900">
-                <h3 className="font-semibold text-gray-200 border-b border-primary-900 pb-2">Inputs</h3>
+            <div className="space-y-4 p-4 bg-gray-50 dark:bg-black/20 rounded-lg border border-gray-200 dark:border-primary-900">
+                <h3 className="font-semibold text-gray-800 dark:text-gray-200 border-b border-gray-200 dark:border-primary-900 pb-2">Inputs</h3>
                 <InputField
                     label="Initial Concentration"
                     id="serial-c1"
@@ -91,7 +90,7 @@ const SerialCalculator: React.FC = () => {
                     units={VOLUME_UNITS}
                 />
                  <div>
-                    <label htmlFor="num-dilutions" className="block text-sm font-medium text-gray-300 mb-1">
+                    <label htmlFor="num-dilutions" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                         Number of Dilutions
                     </label>
                     <input
@@ -99,7 +98,7 @@ const SerialCalculator: React.FC = () => {
                         id="num-dilutions"
                         value={numDilutions}
                         onChange={(e) => setNumDilutions(e.target.value)}
-                        className="flex-1 block w-full px-3 py-2 rounded-md border-primary-800 focus:ring-primary focus:border-primary sm:text-sm transition-colors duration-200 bg-[#051407] text-gray-200 hover:bg-black/20 focus:bg-black/20"
+                        className="flex-1 block w-full px-3 py-2 rounded-md border-gray-300 dark:border-primary-800 focus:ring-primary focus:border-primary sm:text-sm transition-colors duration-200 bg-white dark:bg-[#051407] text-gray-900 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-black/20 focus:bg-gray-50 dark:focus:bg-black/20"
                         min="1"
                         max="100"
                         step="1"
@@ -107,19 +106,19 @@ const SerialCalculator: React.FC = () => {
                 </div>
             </div>
 
-            <div className="space-y-4 p-4 bg-black/20 rounded-lg border border-primary-900">
-                <h3 className="font-semibold text-gray-200 border-b border-primary-900 pb-2">Results</h3>
+            <div className="space-y-4 p-4 bg-gray-50 dark:bg-black/20 rounded-lg border border-gray-200 dark:border-primary-900">
+                <h3 className="font-semibold text-gray-800 dark:text-gray-200 border-b border-gray-200 dark:border-primary-900 pb-2">Results</h3>
                 {error && <div className="text-center text-red-400 bg-red-900/30 p-3 rounded-md border border-red-500/30">{error}</div>}
                 
                 {!error && results.dilutionFactor !== null && (
                     <>
-                        <div className="text-center bg-primary-950/50 p-2 rounded-md">
-                            <span className="text-sm text-primary-300">Dilution Factor per Step: </span>
-                            <span className="font-bold text-white">{results.dilutionFactor.toPrecision(4)}</span>
+                        <div className="text-center bg-primary-50 dark:bg-primary-950/50 p-2 rounded-md">
+                            <span className="text-sm text-primary-700 dark:text-primary-300">Dilution Factor per Step: </span>
+                            <span className="font-bold text-gray-900 dark:text-white">{results.dilutionFactor.toPrecision(4)}</span>
                         </div>
                         <div className="max-h-80 overflow-y-auto pr-2">
                             <table className="w-full text-sm text-left">
-                                <thead className="text-xs text-primary-300 uppercase bg-black/30 sticky top-0">
+                                <thead className="text-xs text-primary-700 dark:text-primary-300 uppercase bg-gray-100 dark:bg-black/30 sticky top-0">
                                     <tr>
                                         <th scope="col" className="px-4 py-2 rounded-l-md">Step</th>
                                         <th scope="col" className="px-4 py-2 rounded-r-md text-right">Concentration ({initialConcentration.unit})</th>
@@ -127,9 +126,9 @@ const SerialCalculator: React.FC = () => {
                                 </thead>
                                 <tbody>
                                     {results.steps.map(({ step, concentration }) => (
-                                        <tr key={step} className="border-b border-primary-900/50">
-                                            <td className="px-4 py-2 font-medium text-gray-300">{step}</td>
-                                            <td className="px-4 py-2 text-right font-mono text-white">{concentration.toExponential(4)}</td>
+                                        <tr key={step} className="border-b border-gray-200 dark:border-primary-900/50">
+                                            <td className="px-4 py-2 font-medium text-gray-800 dark:text-gray-300">{step}</td>
+                                            <td className="px-4 py-2 text-right font-mono text-gray-900 dark:text-white">{concentration.toExponential(4)}</td>
                                         </tr>
                                     ))}
                                 </tbody>
@@ -140,9 +139,9 @@ const SerialCalculator: React.FC = () => {
             </div>
         </div>
         <div className="mt-6 flex justify-end">
-            <button
+             <button
                 onClick={reset}
-                className="px-4 py-2 bg-gray-700 text-white font-medium rounded-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-card focus:ring-gray-500 transition-colors"
+                className="px-4 py-2 bg-gray-600 dark:bg-gray-700 text-white font-medium rounded-md hover:bg-gray-700 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-card dark:focus:ring-offset-[#0c1c10] focus:ring-gray-500 transition-colors"
             >
                 Reset
             </button>

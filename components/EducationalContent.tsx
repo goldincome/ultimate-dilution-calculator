@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const EducationalContent: React.FC = () => {
@@ -24,8 +23,8 @@ const EducationalContent: React.FC = () => {
   return (
     <div className="mt-16 max-w-4xl mx-auto space-y-12">
       <section>
-        <h2 className="text-3xl font-bold text-white border-b-2 border-primary-800 pb-2 mb-4">How to Use the <span className="text-custom-gradient">Calculator</span></h2>
-        <ol className="list-decimal list-inside space-y-3 text-gray-400">
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b-2 border-gray-200 dark:border-primary-800 pb-2 mb-4">How to Use the <span className="text-custom-gradient">Calculator</span></h2>
+        <ol className="list-decimal list-inside space-y-3 text-gray-600 dark:text-gray-400">
           <li><strong>Select Calculation Mode:</strong> Choose between Standard (C₁V₁=C₂V₂), Ratio, or Serial dilution at the top.</li>
           <li><strong>Choose Variable to Solve For:</strong> Select which of the four variables (C₁, V₁, C₂, or V₂) you want to calculate.</li>
           <li><strong>Enter Known Values:</strong> Fill in the three known values in the input fields for your initial (stock) and final solutions.</li>
@@ -36,10 +35,10 @@ const EducationalContent: React.FC = () => {
       </section>
 
       <section>
-        <h2 className="text-3xl font-bold text-white border-b-2 border-primary-800 pb-2 mb-4">Understanding the <span className="text-custom-gradient">Dilution Formula</span></h2>
-        <div className="space-y-4 text-gray-400">
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b-2 border-gray-200 dark:border-primary-800 pb-2 mb-4">Understanding the <span className="text-custom-gradient">Dilution Formula</span></h2>
+        <div className="space-y-4 text-gray-600 dark:text-gray-400">
             <p>The dilution equation is a straightforward way to determine how to prepare a diluted solution from a more concentrated stock solution. The core principle is that the amount of solute doesn't change during dilution; only the volume of the solvent increases, which decreases the overall concentration.</p>
-            <ul className="list-disc list-inside space-y-2 bg-card border border-primary-900 p-4 rounded-md">
+            <ul className="list-disc list-inside space-y-2 bg-card dark:bg-[#0c1c10] border border-gray-200 dark:border-primary-900 p-4 rounded-md">
                 <li><strong>C₁ (Initial Concentration):</strong> The concentration of your starting solution (stock solution).</li>
                 <li><strong>V₁ (Initial Volume):</strong> The volume of the stock solution you will use.</li>
                 <li><strong>C₂ (Final Concentration):</strong> The desired concentration of your new, diluted solution.</li>
@@ -50,12 +49,12 @@ const EducationalContent: React.FC = () => {
       </section>
       
       <section>
-        <h2 className="text-3xl font-bold text-white border-b-2 border-primary-800 pb-2 mb-4">Frequently Asked <span className="text-custom-gradient">Questions</span></h2>
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b-2 border-gray-200 dark:border-primary-800 pb-2 mb-4">Frequently Asked <span className="text-custom-gradient">Questions</span></h2>
         <div className="space-y-4">
             {faqs.map((faq, index) => (
-                <details key={index} className="bg-card p-4 rounded-lg shadow-sm border border-primary-900/70">
-                    <summary className="font-semibold text-gray-200 cursor-pointer hover:text-white transition-colors">{faq.q}</summary>
-                    <p className="mt-3 text-gray-400">{faq.a}</p>
+                <details key={index} className="bg-card dark:bg-[#0c1c10] p-4 rounded-lg shadow-sm border border-gray-200 dark:border-primary-900/70">
+                    <summary className="font-semibold text-gray-800 dark:text-gray-200 cursor-pointer hover:text-gray-900 dark:hover:text-white transition-colors">{faq.q}</summary>
+                    <p className="mt-3 text-gray-600 dark:text-gray-400">{faq.a}</p>
                 </details>
             ))}
         </div>

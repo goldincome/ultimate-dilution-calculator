@@ -1,14 +1,13 @@
-
 import React, { useState, useMemo } from 'react';
 import InputField from './InputField';
 import { ConcentrationUnit, VolumeUnit } from '../types';
 import { CONCENTRATION_UNITS, VOLUME_UNITS, CONCENTRATION_CONVERSIONS, MOLARITY_CONVERSIONS, VOLUME_CONVERSIONS } from '../constants';
 
 const ResultCard = ({ label, value, unit }: { label: string; value: string; unit: string }) => (
-    <div className="bg-primary-950/50 border border-primary-800 rounded-lg p-3">
-        <p className="text-sm font-medium text-primary-300 mb-1">{label}</p>
-        <p className="text-2xl font-bold text-white">
-            {value} <span className="text-lg font-medium text-primary-400">{unit}</span>
+    <div className="bg-primary-50 dark:bg-primary-950/50 border border-primary-200 dark:border-primary-800 rounded-lg p-3">
+        <p className="text-sm font-medium text-primary-700 dark:text-primary-300 mb-1">{label}</p>
+        <p className="text-2xl font-bold text-gray-900 dark:text-white">
+            {value} <span className="text-lg font-medium text-primary-600 dark:text-primary-400">{unit}</span>
         </p>
     </div>
 );
@@ -68,8 +67,8 @@ const RatioCalculator: React.FC = () => {
     <div className="space-y-6">
         <div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-4 p-4 bg-black/20 rounded-lg border border-primary-900">
-                    <h3 className="font-semibold text-gray-200 border-b border-primary-900 pb-2">Initial Solution (Stock)</h3>
+                <div className="space-y-4 p-4 bg-gray-50 dark:bg-black/20 rounded-lg border border-gray-200 dark:border-primary-900">
+                    <h3 className="font-semibold text-gray-800 dark:text-gray-200 border-b border-gray-200 dark:border-primary-900 pb-2">Initial Solution (Stock)</h3>
                     <InputField
                         label="Initial Concentration (C₁)"
                         id="ratio-c1"
@@ -89,11 +88,11 @@ const RatioCalculator: React.FC = () => {
                         units={VOLUME_UNITS}
                     />
                 </div>
-                 <div className="space-y-4 p-4 bg-black/20 rounded-lg border border-primary-900">
-                    <h3 className="font-semibold text-gray-200 border-b border-primary-900 pb-2">Dilution Ratio</h3>
-                    <p className="text-sm text-gray-400">e.g., for a 1:4 ratio, enter 1 for solute and 4 for solvent.</p>
+                 <div className="space-y-4 p-4 bg-gray-50 dark:bg-black/20 rounded-lg border border-gray-200 dark:border-primary-900">
+                    <h3 className="font-semibold text-gray-800 dark:text-gray-200 border-b border-gray-200 dark:border-primary-900 pb-2">Dilution Ratio</h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">e.g., for a 1:4 ratio, enter 1 for solute and 4 for solvent.</p>
                      <div>
-                        <label htmlFor="solute-ratio" className="block text-sm font-medium text-gray-300 mb-1">
+                        <label htmlFor="solute-ratio" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                             Ratio (Solute : Solvent)
                         </label>
                         <div className="flex items-center gap-2">
@@ -102,15 +101,15 @@ const RatioCalculator: React.FC = () => {
                                 id="solute-ratio"
                                 value={soluteRatio}
                                 onChange={(e) => setSoluteRatio(e.target.value)}
-                                className="flex-1 block w-full text-center px-3 py-2 rounded-md border-primary-800 focus:ring-primary focus:border-primary sm:text-sm transition-colors duration-200 bg-[#051407] text-gray-200 hover:bg-black/20 focus:bg-black/20"
+                                className="flex-1 block w-full text-center px-3 py-2 rounded-md border-gray-300 dark:border-primary-800 focus:ring-primary focus:border-primary sm:text-sm transition-colors duration-200 bg-white dark:bg-[#051407] text-gray-900 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-black/20 focus:bg-gray-50 dark:focus:bg-black/20"
                             />
-                            <span className="font-bold text-primary-400">:</span>
+                            <span className="font-bold text-primary-600 dark:text-primary-400">:</span>
                             <input
                                 type="number"
                                 id="solvent-ratio"
                                 value={solventRatio}
                                 onChange={(e) => setSolventRatio(e.target.value)}
-                                className="flex-1 block w-full text-center px-3 py-2 rounded-md border-primary-800 focus:ring-primary focus:border-primary sm:text-sm transition-colors duration-200 bg-[#051407] text-gray-200 hover:bg-black/20 focus:bg-black/20"
+                                className="flex-1 block w-full text-center px-3 py-2 rounded-md border-gray-300 dark:border-primary-800 focus:ring-primary focus:border-primary sm:text-sm transition-colors duration-200 bg-white dark:bg-[#051407] text-gray-900 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-black/20 focus:bg-gray-50 dark:focus:bg-black/20"
                             />
                         </div>
                     </div>
@@ -122,7 +121,7 @@ const RatioCalculator: React.FC = () => {
 
         {!error && results.finalConcentration && (
             <div>
-                <h3 className="text-lg font-semibold text-white mb-3">Calculated Results</h3>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Calculated Results</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <ResultCard label="Final Concentration (C₂)" value={results.finalConcentration} unit={c1.unit} />
                     <ResultCard label="Final Volume (V₂)" value={results.finalVolume} unit={v1.unit} />
@@ -134,7 +133,7 @@ const RatioCalculator: React.FC = () => {
         <div className="mt-6 flex justify-end">
             <button
                 onClick={reset}
-                className="px-4 py-2 bg-gray-700 text-white font-medium rounded-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-card focus:ring-gray-500 transition-colors"
+                className="px-4 py-2 bg-gray-600 dark:bg-gray-700 text-white font-medium rounded-md hover:bg-gray-700 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-card dark:focus:ring-offset-[#0c1c10] focus:ring-gray-500 transition-colors"
             >
                 Reset
             </button>

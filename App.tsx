@@ -41,7 +41,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background text-foreground dark:bg-[#0b1a0d] dark:text-gray-300 transition-colors duration-300">
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
         <Router />

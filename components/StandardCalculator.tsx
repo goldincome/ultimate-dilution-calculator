@@ -1,4 +1,3 @@
-
 import React from 'react';
 import InputField from './InputField';
 import { useStandardCalculator } from '../hooks/useStandardCalculator';
@@ -41,7 +40,7 @@ const StandardCalculator: React.FC = () => {
   return (
     <div>
         <fieldset className="mb-6">
-            <legend className="block text-base font-medium text-white mb-2">Solve For:</legend>
+            <legend className="block text-base font-medium text-gray-900 dark:text-white mb-2">Solve For:</legend>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                 {solveForOptions.map(({ key, label }) => (
                     <div key={key}>
@@ -60,8 +59,8 @@ const StandardCalculator: React.FC = () => {
                                 block w-full text-center px-3 py-2 border rounded-md cursor-pointer 
                                 text-sm font-semibold transition-all duration-200
                                 peer-checked:btn-gradient peer-checked:text-white peer-checked:border-primary-500
-                                border-primary-800 bg-black/20 text-gray-300 hover:bg-white/10
-                                focus:outline-none peer-focus:ring-2 peer-focus:ring-offset-2 peer-focus:ring-offset-card peer-focus:ring-primary-400"
+                                border-gray-300 dark:border-primary-800 bg-white dark:bg-black/20 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/10
+                                focus:outline-none peer-focus:ring-2 peer-focus:ring-offset-2 peer-focus:ring-offset-card dark:peer-focus:ring-offset-[#0c1c10] peer-focus:ring-primary-400"
                         >
                             {label}
                         </label>
@@ -71,8 +70,8 @@ const StandardCalculator: React.FC = () => {
         </fieldset>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-4 p-4 bg-black/20 rounded-lg border border-primary-900">
-                <h3 className="font-semibold text-gray-200 border-b border-primary-900 pb-2">Initial Solution (Stock)</h3>
+            <div className="space-y-4 p-4 bg-gray-50 dark:bg-black/20 rounded-lg border border-gray-200 dark:border-primary-900">
+                <h3 className="font-semibold text-gray-800 dark:text-gray-200 border-b border-gray-200 dark:border-primary-900 pb-2">Initial Solution (Stock)</h3>
                 <InputField
                     label="Initial Concentration (C₁)"
                     id="c1"
@@ -94,8 +93,8 @@ const StandardCalculator: React.FC = () => {
                     isSolveTarget={solveFor === Variable.V1}
                 />
             </div>
-            <div className="space-y-4 p-4 bg-black/20 rounded-lg border border-primary-900">
-                <h3 className="font-semibold text-gray-200 border-b border-primary-900 pb-2">Final Solution (Diluted)</h3>
+            <div className="space-y-4 p-4 bg-gray-50 dark:bg-black/20 rounded-lg border border-gray-200 dark:border-primary-900">
+                <h3 className="font-semibold text-gray-800 dark:text-gray-200 border-b border-gray-200 dark:border-primary-900 pb-2">Final Solution (Diluted)</h3>
                 <InputField
                     label="Final Concentration (C₂)"
                     id="c2"
@@ -128,7 +127,7 @@ const StandardCalculator: React.FC = () => {
         <div className="mt-6 flex justify-end">
             <button
                 onClick={reset}
-                className="px-4 py-2 bg-gray-700 text-white font-medium rounded-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-card focus:ring-gray-500 transition-colors"
+                className="px-4 py-2 bg-gray-600 dark:bg-gray-700 text-white font-medium rounded-md hover:bg-gray-700 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-card dark:focus:ring-offset-[#0c1c10] focus:ring-gray-500 transition-colors"
             >
                 Reset
             </button>
