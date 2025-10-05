@@ -1,0 +1,5 @@
+{
+  "name": "Dilution Equation Calculator",
+  "description": "An advanced dilution equation calculator to solve C1V1 = C2V2 for any variable. Ideal for laboratory, cleaning, cooking, and automotive applications with support for various concentration and volume units.",
+  "requestFramePermissions": []
+}
