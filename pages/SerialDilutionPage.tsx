@@ -1,11 +1,12 @@
 import React from 'react';
 import SerialCalculator from '../components/SerialCalculator';
 import { usePageMetadata } from '../hooks/usePageMetadata';
+import SerialDilutionGuide from '../components/SerialDilutionGuide';
 
 const SerialDilutionPage: React.FC = () => {
     usePageMetadata(
-        'Serial Dilution Calculator - Plan Multi-Step Dilutions',
-        'Plan your serial dilutions with ease. Our calculator determines the concentration at each step based on your initial concentration, transfer volume, and diluent volume.'
+        'The Serial Dilution Calculator: Master Multi-Step Protocols and Eliminate Propagated Error',
+        'Stop propagated error! Master serial dilution calculation with our free tool. Learn DF, Move Volume, and error-prevention steps for perfect standard curves.'
     );
 
     return (
@@ -19,7 +20,7 @@ const SerialDilutionPage: React.FC = () => {
                 </p>
             </div>
             
-            <div className="max-w-4xl mx-auto">
+            <div id="calculator" className="max-w-4xl mx-auto">
                 <div className="bg-card dark:bg-[#0c1c10] rounded-2xl shadow-lg dark:shadow-2xl dark:shadow-black/30 p-4 sm:p-6 md:p-8 border border-gray-200 dark:border-primary-800">
                    <SerialCalculator />
                 </div>
@@ -43,6 +44,8 @@ const SerialDilutionPage: React.FC = () => {
                     </ol>
                 </div>
             </section>
+            
+            <SerialDilutionGuide />
         </>
     );
 };
