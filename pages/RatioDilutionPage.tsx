@@ -1,11 +1,12 @@
 import React from 'react';
 import RatioCalculator from '../components/RatioCalculator';
 import { usePageMetadata } from '../hooks/usePageMetadata';
+import RatioDilutionGuide from '../components/RatioDilutionGuide';
 
 const RatioDilutionPage: React.FC = () => {
     usePageMetadata(
-        'Ratio Dilution Calculator - Calculate by Ratio (e.g., 1:10)',
-        'Easily perform ratio-based dilutions with our calculator. Input your stock concentration, volume, and dilution ratio (e.g., 1:4) to find the final concentration and required solvent volume.'
+        'Ratio Dilution Calculator: Master 1:X Notation',
+        'Stop guessing 1:X! Use our free Ratio Dilution Calculator to clarify Solute:Diluent vs Solute:Total volume, guaranteeing perfect protocol execution.'
     );
 
     return (
@@ -19,7 +20,7 @@ const RatioDilutionPage: React.FC = () => {
                 </p>
             </div>
             
-            <div className="max-w-4xl mx-auto">
+            <div id="calculator" className="max-w-4xl mx-auto">
                 <div className="bg-card dark:bg-[#0c1c10] rounded-2xl shadow-lg dark:shadow-2xl dark:shadow-black/30 p-4 sm:p-6 md:p-8 border border-gray-200 dark:border-primary-800">
                    <RatioCalculator />
                 </div>
@@ -42,6 +43,8 @@ const RatioDilutionPage: React.FC = () => {
                     </ol>
                 </div>
             </section>
+
+            <RatioDilutionGuide />
         </>
     );
 };
