@@ -27,13 +27,13 @@ const Header: React.FC = () => {
   return (
     <header className="bg-white/80 dark:bg-[#0b1a0d]/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200 dark:border-primary-900 transition-colors">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <a href="/index.html" className="flex items-center space-x-3">
+        <a href="/" className="flex items-center space-x-3">
           <BeakerIcon />
           <span className="text-xl font-bold text-gray-800 dark:text-white">DilutionCalc</span>
         </a>
         <nav className="flex items-center space-x-4">
           <ul className="flex items-center space-x-6 text-gray-600 dark:text-gray-300">
-            <li><a href="/index.html" className="hover:text-primary transition-colors font-medium">Home</a></li>
+            <li><a href="/" className="hover:text-primary transition-colors font-medium">Home</a></li>
             <li className="relative" ref={dropdownRef}>
               <button onClick={toggleDropdown} className="flex items-center space-x-1 hover:text-primary transition-colors font-medium focus:outline-none">
                 <span>Tools</span>
@@ -41,8 +41,8 @@ const Header: React.FC = () => {
               </button>
               {isDropdownOpen && (
                 <div className="absolute right-0 top-full mt-2 w-64 bg-card dark:bg-[#0c1c10] border border-gray-200 dark:border-primary-800 rounded-md shadow-lg py-2">
-                  <a href="/ratio-dilution-calculator.html" className="block px-4 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-primary-950 hover:text-gray-900 dark:hover:text-white">Ratio Dilution Calculator</a>
-                  <a href="/serial-dilution-calculator.html" className="block px-4 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-primary-950 hover:text-gray-900 dark:hover:text-white">Serial Dilution Calculator</a>
+                  <a href="/ratio-dilution-calculator" className="block px-4 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-primary-950 hover:text-gray-900 dark:hover:text-white">Ratio Dilution Calculator</a>
+                  <a href="/serial-dilution-calculator" className="block px-4 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-primary-950 hover:text-gray-900 dark:hover:text-white">Serial Dilution Calculator</a>
                 </div>
               )}
             </li>
