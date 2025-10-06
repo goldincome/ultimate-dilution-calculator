@@ -9,7 +9,7 @@ const ContactPage: React.FC = () => {
         author: 'DilutionCalc Team',
         publisher: 'DilutionCalc',
         robots: 'index, follow',
-        canonicalUrl: 'https://[YOUR_DOMAIN_HERE]/contact',
+        canonicalUrl: 'https://dilutioncalculator.xyz/contact',
     });
     
     const handleSubmit = (e: React.FormEvent) => {

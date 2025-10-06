@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
         author: 'DilutionCalc Team',
         publisher: 'DilutionCalc',
         robots: 'index, follow',
-        canonicalUrl: 'https://[YOUR_DOMAIN_HERE]/',
+        canonicalUrl: 'https://dilutioncalculator.xyz/',
     });
 
     return (

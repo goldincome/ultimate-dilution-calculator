@@ -9,7 +9,7 @@ const PrivacyPolicyPage: React.FC = () => {
         author: 'DilutionCalc Team',
         publisher: 'DilutionCalc',
         robots: 'index, follow',
-        canonicalUrl: 'https://[YOUR_DOMAIN_HERE]/privacy-policy',
+        canonicalUrl: 'https://dilutioncalculator.xyz/privacy-policy',
     });
 
     return (
