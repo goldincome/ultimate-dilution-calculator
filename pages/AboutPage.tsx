@@ -2,10 +2,15 @@ import React from 'react';
 import { usePageMetadata } from '../hooks/usePageMetadata';
 
 const AboutPage: React.FC = () => {
-    usePageMetadata(
-        'About DilutionCalc',
-        'Learn about DilutionCalc, a free and powerful tool designed for students, scientists, and professionals to perform accurate dilution calculations with ease.'
-    );
+    usePageMetadata({
+        title: 'About DilutionCalc',
+        description: 'Learn about DilutionCalc, a free and powerful tool designed for students, scientists, and professionals to perform accurate dilution calculations with ease.',
+        keywords: 'about dilutioncalc, science calculator, chemistry tool, lab assistant, free calculator',
+        author: 'DilutionCalc Team',
+        publisher: 'DilutionCalc',
+        robots: 'index, follow',
+        canonicalUrl: 'https://[YOUR_DOMAIN_HERE]/about',
+    });
 
     return (
         <div className="max-w-4xl mx-auto space-y-12">

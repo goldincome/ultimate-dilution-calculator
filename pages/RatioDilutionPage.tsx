@@ -4,10 +4,15 @@ import { usePageMetadata } from '../hooks/usePageMetadata';
 import RatioDilutionGuide from '../components/RatioDilutionGuide';
 
 const RatioDilutionPage: React.FC = () => {
-    usePageMetadata(
-        'Ratio Dilution Calculator: Master 1:X Notation',
-        'Stop guessing 1:X! Use our free Ratio Dilution Calculator to clarify Solute:Diluent vs Solute:Total volume, guaranteeing perfect protocol execution.'
-    );
+    usePageMetadata({
+        title: 'Ratio Dilution Calculator: Master 1:X Notation',
+        description: 'Stop guessing 1:X! Use our free Ratio Dilution Calculator to clarify Solute:Diluent vs Solute:Total volume, guaranteeing perfect protocol execution.',
+        keywords: 'ratio dilution calculator, 1:10 dilution, solute to solvent ratio, parts per million, dilution ratio, lab protocol',
+        author: 'DilutionCalc Team',
+        publisher: 'DilutionCalc',
+        robots: 'index, follow',
+        canonicalUrl: 'https://[YOUR_DOMAIN_HERE]/ratio-dilution-calculator',
+    });
 
     return (
         <>

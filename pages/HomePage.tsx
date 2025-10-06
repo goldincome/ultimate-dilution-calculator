@@ -4,10 +4,15 @@ import EducationalContent from '../components/EducationalContent';
 import { usePageMetadata } from '../hooks/usePageMetadata';
 
 const HomePage: React.FC = () => {
-    usePageMetadata(
-        'Dilution Calculator - Free C1V1 = C2V2 Solution Calculator',
-        'Calculate dilutions instantly with our free dilution calculator. Solve C1V1 = C2V2 for any variable. Perfect for lab work, cleaning solutions, and more. Try it now!'
-    );
+    usePageMetadata({
+        title: 'Dilution Calculator - Free C1V1 = C2V2 Solution Calculator',
+        description: 'Calculate dilutions instantly with our free dilution calculator. Solve C1V1 = C2V2 for any variable. Perfect for lab work, cleaning solutions, and more. Try it now!',
+        keywords: 'dilution calculator, c1v1=c2v2, solution calculator, chemistry calculator, molarity calculator, lab calculator, stock solution',
+        author: 'DilutionCalc Team',
+        publisher: 'DilutionCalc',
+        robots: 'index, follow',
+        canonicalUrl: 'https://[YOUR_DOMAIN_HERE]/',
+    });
 
     return (
         <>

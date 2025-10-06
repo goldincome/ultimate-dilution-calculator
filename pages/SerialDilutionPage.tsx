@@ -4,10 +4,15 @@ import { usePageMetadata } from '../hooks/usePageMetadata';
 import SerialDilutionGuide from '../components/SerialDilutionGuide';
 
 const SerialDilutionPage: React.FC = () => {
-    usePageMetadata(
-        'The Serial Dilution Calculator: Master Multi-Step Protocols and Eliminate Propagated Error',
-        'Stop propagated error! Master serial dilution calculation with our free tool. Learn DF, Move Volume, and error-prevention steps for perfect standard curves.'
-    );
+    usePageMetadata({
+        title: 'The Serial Dilution Calculator: Master Multi-Step Protocols and Eliminate Propagated Error',
+        description: 'Stop propagated error! Master serial dilution calculation with our free tool. Learn DF, Move Volume, and error-prevention steps for perfect standard curves.',
+        keywords: 'serial dilution calculator, standard curve, dilution factor, propagated error, titer assay, microbiology, multi-step dilution',
+        author: 'DilutionCalc Team',
+        publisher: 'DilutionCalc',
+        robots: 'index, follow',
+        canonicalUrl: 'https://[YOUR_DOMAIN_HERE]/serial-dilution-calculator',
+    });
 
     return (
         <>

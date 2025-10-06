@@ -2,10 +2,15 @@ import React from 'react';
 import { usePageMetadata } from '../hooks/usePageMetadata';
 
 const PrivacyPolicyPage: React.FC = () => {
-    usePageMetadata(
-        'Privacy Policy - DilutionCalc',
-        'Read the privacy policy for DilutionCalc. We are committed to protecting your privacy and handling your data in an open and transparent manner.'
-    );
+    usePageMetadata({
+        title: 'Privacy Policy - DilutionCalc',
+        description: 'Read the privacy policy for DilutionCalc. We are committed to protecting your privacy and handling your data in an open and transparent manner.',
+        keywords: 'privacy policy, data protection, dilution calculator privacy',
+        author: 'DilutionCalc Team',
+        publisher: 'DilutionCalc',
+        robots: 'index, follow',
+        canonicalUrl: 'https://[YOUR_DOMAIN_HERE]/privacy-policy',
+    });
 
     return (
         <div className="max-w-4xl mx-auto space-y-8 text-gray-600 dark:text-gray-400">

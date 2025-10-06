@@ -2,10 +2,15 @@ import React from 'react';
 import { usePageMetadata } from '../hooks/usePageMetadata';
 
 const ContactPage: React.FC = () => {
-    usePageMetadata(
-        'Contact Us - DilutionCalc',
-        'Get in touch with the DilutionCalc team. We welcome your feedback, questions, and suggestions to help us improve our tools.'
-    );
+    usePageMetadata({
+        title: 'Contact Us - DilutionCalc',
+        description: 'Get in touch with the DilutionCalc team. We welcome your feedback, questions, and suggestions to help us improve our tools.',
+        keywords: 'contact dilutioncalc, support, feedback, science calculator contact',
+        author: 'DilutionCalc Team',
+        publisher: 'DilutionCalc',
+        robots: 'index, follow',
+        canonicalUrl: 'https://[YOUR_DOMAIN_HERE]/contact',
+    });
     
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
