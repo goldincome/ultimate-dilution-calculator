@@ -55,7 +55,7 @@ const ContactPage: React.FC = () => {
                             <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
                             <textarea id="message" name="message" rows={4} required className="block w-full px-3 py-2 rounded-md border-gray-300 dark:border-primary-800 focus:ring-primary focus:border-primary sm:text-sm transition-colors duration-200 bg-white dark:bg-[#051407] text-gray-900 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-black/20 focus:bg-gray-50 dark:focus:bg-black/20"></textarea>
                         </div>
-                        <button type="submit" className="w-full btn-gradient text-white font-semibold py-2.5 px-4 rounded-md hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-card dark:focus:ring-offset-[#0c1c10] focus:ring-primary-400">
+                        <button type="submit" className="w-full btn-gradient text-gray-900 dark:text-white font-semibold py-2.5 px-4 rounded-md hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-card dark:focus:ring-offset-[#0c1c10] focus:ring-primary-400">
                             Send Message
                         </button>
                     </form>

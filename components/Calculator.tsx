@@ -26,7 +26,7 @@ const Calculator: React.FC = () => {
         onClick={() => setActiveTab(tab)}
         className={`px-4 py-2 text-sm md:text-base font-medium rounded-md transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background dark:focus:ring-offset-[#0c1c10] focus:ring-primary-400 ${
         activeTab === tab 
-            ? 'btn-gradient text-white shadow-lg shadow-primary-900/50' 
+            ? 'btn-gradient text-gray-900 dark:text-white shadow-lg shadow-primary-900/50' 
             : 'text-gray-500 dark:text-gray-400 hover:bg-black/5 dark:hover:bg-white/5'
         }`}
     >

@@ -58,7 +58,7 @@ const StandardCalculator: React.FC = () => {
                             className="
                                 block w-full text-center px-3 py-2 border rounded-md cursor-pointer 
                                 text-sm font-semibold transition-all duration-200
-                                peer-checked:btn-gradient peer-checked:text-white peer-checked:border-primary-500
+                                peer-checked:btn-gradient peer-checked:text-gray-900 dark:peer-checked:text-white peer-checked:border-primary-500
                                 border-gray-300 dark:border-primary-800 bg-white dark:bg-black/20 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/10
                                 focus:outline-none peer-focus:ring-2 peer-focus:ring-offset-2 peer-focus:ring-offset-card dark:peer-focus:ring-offset-[#0c1c10] peer-focus:ring-primary-400"
                         >

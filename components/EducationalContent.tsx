@@ -23,7 +23,7 @@ const EducationalContent: React.FC = () => {
   const CTABlock: React.FC<{href: string, buttonText: string, children: React.ReactNode}> = ({ href, buttonText, children }) => (
     <div className="my-6 p-6 bg-primary-50 dark:bg-primary-950/50 border-l-4 border-primary-500 rounded-r-lg not-prose">
         <p className="text-lg text-primary-800 dark:text-primary-200">{children}</p>
-        <a href={href} className="inline-block mt-4 btn-gradient text-white font-semibold py-2 px-5 rounded-md hover:opacity-90 transition-opacity">
+        <a href={href} className="inline-block mt-4 btn-gradient text-gray-900 dark:text-white font-semibold py-2 px-5 rounded-md hover:opacity-90 transition-opacity">
             {buttonText}
         </a>
     </div>
