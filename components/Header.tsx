@@ -41,8 +41,8 @@ const Header: React.FC = () => {
               </button>
               {isDropdownOpen && (
                 <div className="absolute right-0 top-full mt-2 w-64 bg-card dark:bg-[#0c1c10] border border-gray-200 dark:border-primary-800 rounded-md shadow-lg py-2">
-                  <a href="/ratio-dilution-calculator" className="block px-4 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-primary-950 hover:text-gray-900 dark:hover:text-white">Ratio Dilution Calculator</a>
-                  <a href="/serial-dilution-calculator" className="block px-4 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-primary-950 hover:text-gray-900 dark:hover:text-white">Serial Dilution Calculator</a>
+                  <a href="/?page=ratio-dilution-calculator" className="block px-4 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-primary-950 hover:text-gray-900 dark:hover:text-white">Ratio Dilution Calculator</a>
+                  <a href="/?page=serial-dilution-calculator" className="block px-4 py-2 text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-primary-950 hover:text-gray-900 dark:hover:text-white">Serial Dilution Calculator</a>
                 </div>
               )}
             </li>

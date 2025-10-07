@@ -10,31 +10,25 @@ import ContactPage from './pages/ContactPage';
 
 const App: React.FC = () => {
   const Router = () => {
-    const { pathname } = window.location;
+    const params = new URLSearchParams(window.location.search);
+    const page = params.get('page');
 
-    switch (pathname) {
-        case '/ratio-dilution-calculator.html':
-        case '/ratio-dilution-calculator':
+    switch (page) {
+        case 'ratio-dilution-calculator':
             return <RatioDilutionPage />;
 
-        case '/serial-dilution-calculator.html':
-        case '/serial-dilution-calculator':
+        case 'serial-dilution-calculator':
             return <SerialDilutionPage />;
 
-        case '/about.html':
-        case '/about':
+        case 'about':
             return <AboutPage />;
 
-        case '/privacy-policy.html':
-        case '/privacy-policy':
+        case 'privacy-policy':
             return <PrivacyPolicyPage />;
 
-        case '/contact.html':
-        case '/contact':
+        case 'contact':
             return <ContactPage />;
 
-        case '/index.html':
-        case '/':
         default:
             return <HomePage />;
     }

@@ -6,27 +6,27 @@
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://dilutioncalculator.xyz/ratio-dilution-calculator</loc>
+    <loc>https://dilutioncalculator.xyz/?page=ratio-dilution-calculator</loc>
     <lastmod>2023-10-27</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://dilutioncalculator.xyz/serial-dilution-calculator</loc>
+    <loc>https://dilutioncalculator.xyz/?page=serial-dilution-calculator</loc>
     <lastmod>2023-10-27</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://dilutioncalculator.xyz/about</loc>
+    <loc>https://dilutioncalculator.xyz/?page=about</loc>
     <lastmod>2023-10-27</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://dilutioncalculator.xyz/privacy-policy</loc>
+    <loc>https://dilutioncalculator.xyz/?page=privacy-policy</loc>
     <lastmod>2023-10-27</lastmod>
     <priority>0.50</priority>
   </url>
   <url>
-    <loc>https://dilutioncalculator.xyz/contact</loc>
+    <loc>https://dilutioncalculator.xyz/?page=contact</loc>
     <lastmod>2023-10-27</lastmod>
     <priority>0.60</priority>
   </url>

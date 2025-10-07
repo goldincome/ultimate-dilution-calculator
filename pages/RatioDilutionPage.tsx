@@ -11,7 +11,7 @@ const RatioDilutionPage: React.FC = () => {
         author: 'DilutionCalc Team',
         publisher: 'DilutionCalc',
         robots: 'index, follow',
-        canonicalUrl: 'https://dilutioncalculator.xyz/ratio-dilution-calculator',
+        canonicalUrl: 'https://dilutioncalculator.xyz/?page=ratio-dilution-calculator',
     });
 
     return (
