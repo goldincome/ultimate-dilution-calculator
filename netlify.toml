@@ -1,7 +1,25 @@
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml"
+
 [[redirects]]
   from = "/sitemap.xml"
   to = "/sitemap.xml"
   status = 200
+  force = true
+
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/ads.txt"
+  to = "/ads.txt"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/*"
