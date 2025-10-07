@@ -182,7 +182,7 @@ const EducationalContent: React.FC = () => {
             <h4 className="font-bold text-red-800 dark:text-red-200">⚠️ Propagated Error: The Silent Killer</h4>
             <p className="text-red-700 dark:text-red-300">Any pipetting or calculation error in the first step is <strong>compounded and carried</strong> through every subsequent step, often ruining the entire series. Manual calculation for serial dilutions is extremely high-risk.</p>
         </div>
-        <CTABlock href="/?page=serial-dilution-calculator" buttonText="Go to the Serial Dilution Calculator">
+        <CTABlock href="/serial-dilution-calculator" buttonText="Go to the Serial Dilution Calculator">
             Input your starting concentration, desired dilution factor, and final volume. Our tool calculates every step, minimizing the risk of propagated error.
         </CTABlock>
       </Section>
@@ -202,7 +202,7 @@ const EducationalContent: React.FC = () => {
           <SubSection title="Real-World Applications">
               <p>Ratio dilutions simplify protocols in clinical diagnostics (e.g., diluting serum 1:10) and in industry (e.g., diluting a cleaning concentrate 1:32).</p>
           </SubSection>
-          <CTABlock href="/?page=ratio-dilution-calculator" buttonText="Try the Ratio Dilution Calculator">
+          <CTABlock href="/ratio-dilution-calculator" buttonText="Try the Ratio Dilution Calculator">
             🎯 Stop Guessing Ratio Math. If you have a ratio and a target final volume, let the calculator instantly convert the required parts into exact volumes of stock and diluent.
         </CTABlock>
       </Section>
@@ -244,8 +244,8 @@ const EducationalContent: React.FC = () => {
                 <p className="mt-2">We have engineered a suite of dedicated tools that instantly process the complex calculations covered in this guide. <strong>Click the links below now</strong> to save time and guarantee precision on your next experiment:</p>
                 <ul className="list-disc list-outside space-y-2 mt-4 pl-5 text-primary-700 dark:text-primary-300">
                     <li><strong>For C₁V₁ = C₂V₂:</strong> Use the <a href="#top" className="font-bold underline hover:text-primary-600 dark:hover:text-primary-200">Standard Dilution Calculator</a> for instant concentration and volume solutions.</li>
-                    <li><strong>For standard curves and titering:</strong> Use the <a href="/?page=serial-dilution-calculator" className="font-bold underline hover:text-primary-600 dark:hover:text-primary-200">Serial Dilution Calculator</a> to map out complex multi-step protocols without propagated error.</li>
-                    <li><strong>For protocol or clinical ratios:</strong> Use the <a href="/?page=ratio-dilution-calculator" className="font-bold underline hover:text-primary-600 dark:hover:text-primary-200">Ratio Dilution Calculator</a> to instantly convert 1:X notation into precise volumes.</li>
+                    <li><strong>For standard curves and titering:</strong> Use the <a href="/serial-dilution-calculator" className="font-bold underline hover:text-primary-600 dark:hover:text-primary-200">Serial Dilution Calculator</a> to map out complex multi-step protocols without propagated error.</li>
+                    <li><strong>For protocol or clinical ratios:</strong> Use the <a href="/ratio-dilution-calculator" className="font-bold underline hover:text-primary-600 dark:hover:text-primary-200">Ratio Dilution Calculator</a> to instantly convert 1:X notation into precise volumes.</li>
                 </ul>
                 <p className="mt-4 font-semibold text-primary-800 dark:text-primary-200">Click, Calculate, Confirm.</p>
             </div>

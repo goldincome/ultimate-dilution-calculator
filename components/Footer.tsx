@@ -7,9 +7,9 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 py-8 text-center text-gray-500 dark:text-gray-400">
         <p>&copy; {currentYear} DilutionCalc. All rights reserved.</p>
         <div className="mt-4 text-sm flex justify-center space-x-4">
-          <a href="/?page=about" className="hover:text-primary transition-colors">About</a>
-          <a href="/?page=privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a>
-          <a href="/?page=contact" className="hover:text-primary transition-colors">Contact</a>
+          <a href="/about" className="hover:text-primary transition-colors">About</a>
+          <a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a>
+          <a href="/contact" className="hover:text-primary transition-colors">Contact</a>
         </div>
       </div>
     </footer>

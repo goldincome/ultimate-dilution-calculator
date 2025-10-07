@@ -11,7 +11,7 @@ const SerialDilutionPage: React.FC = () => {
         author: 'DilutionCalc Team',
         publisher: 'DilutionCalc',
         robots: 'index, follow',
-        canonicalUrl: 'https://dilutioncalculator.xyz/?page=serial-dilution-calculator',
+        canonicalUrl: 'https://dilutioncalculator.xyz/serial-dilution-calculator',
     });
 
     return (

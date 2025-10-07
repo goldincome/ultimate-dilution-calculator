@@ -9,7 +9,7 @@ const AboutPage: React.FC = () => {
         author: 'DilutionCalc Team',
         publisher: 'DilutionCalc',
         robots: 'index, follow',
-        canonicalUrl: 'https://dilutioncalculator.xyz/?page=about',
+        canonicalUrl: 'https://dilutioncalculator.xyz/about',
     });
 
     return (
